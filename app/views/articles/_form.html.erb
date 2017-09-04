@@ -8,11 +8,11 @@
       </h2>
       <ul>
         <% @article.errors.messages.each do |n,msg| %>
-      <% msg.each do |e| #msg est un tableau %>
-        <li>
-          <%= e %>
-        </li>
-      <%end%> 
+          <% msg.each do |e| #msg est un tableau %>
+            <li>
+              <%= e %>
+            </li>
+          <%end%> 
         <% end %>
       </ul>
     </div>
